@@ -20,7 +20,12 @@ window.onload = function countdown(){
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    
+    //concatenate zero to front of single digit seconds to help keep spacing consistent
+    if(seconds < 10){
+            seconds = "0"+seconds;
+    }
 
     //output the data into their respective containers.
     document.querySelector('#dateData-days').innerHTML = days 
