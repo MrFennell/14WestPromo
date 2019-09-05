@@ -1,0 +1,278 @@
+//sass --watch public/css/input.scss public/css/main.css
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  
+  /* HTML5 display-role reset for older browsers */
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  
+  body {
+    line-height: 1; }
+  
+  ol, ul {
+    list-style: none; }
+  
+  blockquote, q {
+    quotes: none; }
+  
+  blockquote {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  q {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  
+$light-blue: #71a1be;
+$medium-blue: #005282;
+$dark-blue: #05263a;
+$pink: #f58c99;
+$white: #fff;
+$col-margin: 1rem;
+$font-larger: 25px;
+
+body{
+    text-align: center;
+    font-family:"Lato", sans-serif;
+    font-size: 16px;
+    @media all and (min-width: 768px) { 
+        max-width: 1080px;
+        margin: auto;
+    }
+}
+
+header{
+    width:92%;
+    margin: auto;
+    
+    #h1-container{
+        width:73%;
+        border-bottom: 2px solid $medium-blue;
+        margin: auto;
+        h1{
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            padding:40px 0;
+        }
+    }
+    #header-quote {
+        margin-top: 40px;
+        line-height: 1.2;
+        p{
+            font-size: 28px;
+            font-family:arial, sans-serif;  
+            margin-bottom: 1rem;
+            font-weight: bold;
+            .light-blue{
+                color:$medium-blue;
+            }
+        }
+    }
+    
+}
+form{
+    width: fit-content;
+    margin: auto;
+    input, label{
+        vertical-align: middle;
+    }
+    button{
+        background-color: $medium-blue;
+        border: 1px solid $dark-blue;
+        border-radius: 12px;
+        height: 5rem;
+        width: 88%;
+        font-family:arial, sans-serif;  
+        color: $white;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0 3em 0 3em;
+        margin: 24px 0 24px 0;
+        cursor: pointer;
+        @media all and (min-width: 768px) {
+            width: 450px;
+        }
+    }
+}
+#main{
+    #dates{
+        #date-static{
+            padding: 3rem 2rem;
+            background-color: $light-blue;
+            img{
+                height: 161px;
+                width: 144px;
+            }
+            p{
+                color: $white;
+            }
+            #date-static-day{
+                margin-top: 2rem;
+                font-size: $font-larger;
+            }
+            #date-static-time{
+                margin-top: 1rem;
+            }
+        }
+        #date-timer{
+            background-color: $light-blue;
+            padding: 40px 40px;
+            
+            p:first-child{
+                font-size: $font-larger;
+            }
+            p{
+                color:$white;
+            }
+            #dateData{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 48px;
+                .col{
+                    p:first-child{
+                        margin-bottom:2px;
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+    @media all and (min-width: 768px) {
+        #dates{
+            display: flex;
+            margin-bottom: $col-margin;
+            #date-static{
+                width: 42%;
+                padding: 40px 32px 60px 32px;
+                #date-static-day{
+                    margin-top: 2rem;
+                    font-size: $font-larger;
+                }
+                #date-static-time{
+                    margin-top: 1rem;
+                }
+            }
+            #date-timer{
+                width: 80%;
+                margin-left: $col-margin;
+                padding: 40px 40px;
+                
+                
+                #dateData{
+                    margin-top: 68px;
+                    justify-content: space-evenly;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #james-content{
+        #james-portrait{
+            padding: 4rem 2rem;
+            margin: auto;
+            background-color: $dark-blue;
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            #james-portrait-presented{
+                font-style: italic;
+                margin-top:2rem;
+                color: $white;
+            }
+            #james-portrait-name{
+                font-size: $font-larger;
+                margin-top:40px;
+                color: $white;
+            }
+        }
+    }
+    #checkboxes{
+        padding: 0 1rem 0 1rem;
+        background-color: #ebebeb;
+        
+        #checkboxes-header{
+            font-weight: bold;
+            padding: 3rem 0 2rem 0;
+        }
+        .checkboxes-row{
+            display: flex;
+            min-height: 133px;
+            
+            p{
+                margin: 1em 0 0 1rem;
+                text-align: left;
+                line-height: 1.4;
+            }
+        }
+    }
+    @media all and (min-width: 768px) { 
+        #james-content{
+            display: flex;
+            margin-bottom: $col-margin;
+            #james-portrait{
+                height: auto;
+                padding: 4rem 1rem;
+                margin: 0;
+                background-color: $dark-blue;
+                width: 50%;
+                img{
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+        #checkboxes{
+            padding: 0 2rem 0 2rem;
+            width: 50%;
+        } 
+    }
+}
+footer{
+    #warning{
+        padding: 40px 1rem 40px 1rem;
+        line-height: 1.4;
+        background-color: $pink;
+        color: $white;
+        font-size: 1.2rem;
+        font-family: arial, sans-serif;
+        font-weight: bold;
+        img{
+            display:none;
+        }
+    }
+    #claim-spot{
+        padding: 40px 1rem 40px 1rem;
+        background-color: $dark-blue;
+        color: $white;
+        font-size: 1.2rem;
+        font-family: arial, sans-serif;
+        font-style: italic;
+    }
+    #arrow-container{
+        height: 48px;
+        background-color: $white;
+        #downward-arrow{
+            height: 100%;
+            background-color: $dark-blue;
+            clip-path: polygon(50% -2%, 100% -2%, 50% 100%, 0% -2%);;
+            width: 120px;
+            margin: auto;
+        }
+    }
+}

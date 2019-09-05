@@ -1,0 +1,262 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+@media all and (min-width: 768px) {
+  body {
+    max-width: 1080px;
+    margin: auto;
+  }
+}
+
+header {
+  width: 92%;
+  margin: auto;
+}
+header #h1-container {
+  width: 73%;
+  border-bottom: 2px solid #005282;
+  margin: auto;
+}
+header #h1-container h1 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 40px 0;
+}
+header #header-quote {
+  margin-top: 40px;
+  line-height: 1.2;
+}
+header #header-quote p {
+  font-size: 28px;
+  font-family: arial, sans-serif;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+header #header-quote p .light-blue {
+  color: #005282;
+}
+
+form {
+  width: fit-content;
+  margin: auto;
+}
+form input, form label {
+  vertical-align: middle;
+}
+form button {
+  background-color: #005282;
+  border: 1px solid #05263a;
+  border-radius: 12px;
+  height: 5rem;
+  width: 88%;
+  font-family: arial, sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0 3em 0 3em;
+  margin: 24px 0 24px 0;
+  cursor: pointer;
+}
+@media all and (min-width: 768px) {
+  form button {
+    width: 450px;
+  }
+}
+
+#main #dates #date-static {
+  padding: 3rem 2rem;
+  background-color: #71a1be;
+}
+#main #dates #date-static img {
+  height: 161px;
+  width: 144px;
+}
+#main #dates #date-static p {
+  color: #fff;
+}
+#main #dates #date-static #date-static-day {
+  margin-top: 2rem;
+  font-size: 25px;
+}
+#main #dates #date-static #date-static-time {
+  margin-top: 1rem;
+}
+#main #dates #date-timer {
+  background-color: #71a1be;
+  padding: 40px 40px;
+}
+#main #dates #date-timer p:first-child {
+  font-size: 25px;
+}
+#main #dates #date-timer p {
+  color: #fff;
+}
+#main #dates #date-timer #dateData {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 48px;
+}
+#main #dates #date-timer #dateData .col p:first-child {
+  margin-bottom: 2px;
+}
+@media all and (min-width: 768px) {
+  #main #dates {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  #main #dates #date-static {
+    width: 42%;
+    padding: 40px 32px 60px 32px;
+  }
+  #main #dates #date-static #date-static-day {
+    margin-top: 2rem;
+    font-size: 25px;
+  }
+  #main #dates #date-static #date-static-time {
+    margin-top: 1rem;
+  }
+  #main #dates #date-timer {
+    width: 80%;
+    margin-left: 1rem;
+    padding: 40px 40px;
+  }
+  #main #dates #date-timer #dateData {
+    margin-top: 68px;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+#main #james-content #james-portrait {
+  padding: 4rem 2rem;
+  margin: auto;
+  background-color: #05263a;
+}
+#main #james-content #james-portrait img {
+  width: 100%;
+  height: 100%;
+}
+#main #james-content #james-portrait #james-portrait-presented {
+  font-style: italic;
+  margin-top: 2rem;
+  color: #fff;
+}
+#main #james-content #james-portrait #james-portrait-name {
+  font-size: 25px;
+  margin-top: 40px;
+  color: #fff;
+}
+#main #checkboxes {
+  padding: 0 1rem 0 1rem;
+  background-color: #ebebeb;
+}
+#main #checkboxes #checkboxes-header {
+  font-weight: bold;
+  padding: 3rem 0 2rem 0;
+}
+#main #checkboxes .checkboxes-row {
+  display: flex;
+  min-height: 133px;
+}
+#main #checkboxes .checkboxes-row p {
+  margin: 1em 0 0 1rem;
+  text-align: left;
+  line-height: 1.4;
+}
+@media all and (min-width: 768px) {
+  #main #james-content {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  #main #james-content #james-portrait {
+    height: auto;
+    padding: 4rem 1rem;
+    margin: 0;
+    background-color: #05263a;
+    width: 50%;
+  }
+  #main #james-content #james-portrait img {
+    width: auto;
+    height: auto;
+  }
+  #main #checkboxes {
+    padding: 0 2rem 0 2rem;
+    width: 50%;
+  }
+}
+
+footer #warning {
+  padding: 40px 1rem 40px 1rem;
+  line-height: 1.4;
+  background-color: #f58c99;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+}
+footer #warning img {
+  display: none;
+}
+footer #claim-spot {
+  padding: 40px 1rem 40px 1rem;
+  background-color: #05263a;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: arial, sans-serif;
+  font-style: italic;
+}
+footer #arrow-container {
+  height: 48px;
+  background-color: #fff;
+}
+footer #arrow-container #downward-arrow {
+  height: 100%;
+  background-color: #05263a;
+  clip-path: polygon(50% -2%, 100% -2%, 50% 100%, 0% -2%);
+  width: 120px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=main.css.map */
