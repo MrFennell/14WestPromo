@@ -85,7 +85,7 @@ header{
 }
 form{
     width: fit-content;
-    margin: auto;
+    margin: 0 auto 10px auto;
     input, label{
         vertical-align: middle;
     }
@@ -106,6 +106,12 @@ form{
             width: 450px;
         }
     }
+}
+#header-form{
+    margin-top: 26px;
+}
+#footer-form{
+    margin-top: 8px;
 }
 .submit-response{
     font-size: $font-larger;
@@ -253,7 +259,7 @@ form{
 }
 footer{
     #warning{
-        padding: 40px 1rem 40px 1rem;
+        padding: 36px 1rem 36px 1rem;
         line-height: 1.4;
         background-color: $pink;
         color: $white;
@@ -265,7 +271,7 @@ footer{
         }
     }
     #claim-spot{
-        padding: 40px 1rem 40px 1rem;
+        padding: 46px 1rem 46px 1rem;
         background-color: $dark-blue;
         color: $white;
         font-size: 1.2rem;

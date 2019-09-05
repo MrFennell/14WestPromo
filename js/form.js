@@ -31,10 +31,19 @@ buttonArray.forEach(function(button){
 
         //set an array containing each checkbox and their current attributes.
         const checkboxes = document.querySelectorAll('input[type="checkbox"]')
+        
+        //alert the user to check the checkbox in order to continue if necessary
+        if (checkboxes[0].checked !== true || checkboxes[1].checked !== true){  
+            alert('Please check the field above to reserve your live webinar.')
+        }
 
-        //check that both checkboxes are checked before continuing.
-        if (checkboxes[0].checked === true && checkboxes[1].checked === true){   
-            
+        //alert if user has already confirmed their reservation
+        else if (document.querySelector('.submit-response').style.display ==='block'){
+            alert('You have already reserved your seat at the webinar.')
+        }
+
+        else{
+
             try{
                 //create request object to be sent
                 const request = new XMLHttpRequest()
@@ -42,12 +51,11 @@ buttonArray.forEach(function(button){
                 //use a GET request as we are not sending any data, and set the async boolean to 'true'
                 request.open('GET', 'https://bl45immth4.execute-api.us-east-1.amazonaws.com/production/', true)
 
-                //tell the http request to not send any data.
                 request.send()
                 
                 request.onload = function(){
 
-                    //parse the response into a JSON object and then single out the body.
+                    //parse the response into a JSON object and single out the body.
                     const res = JSON.parse(this.response);
                     const resBody = res.body
 
@@ -66,11 +74,6 @@ buttonArray.forEach(function(button){
             catch(error){
                 console.log(error)
             }
-        }
-
-        //alert the user to check the checkbox in order to continue.
-        else{
-            alert('Please select that you would like a free newspaper to reserve your live webinar.')
         }
     })
 })
