@@ -41,49 +41,12 @@ window.onload = function countdown(){
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-    console.log('days',days, 'h',hours,'m',minutes,'s',seconds);
+    //output the data into the respective containers.
     document.querySelector('#dateData-days').innerHTML = days 
     document.querySelector('#dateData-hours').innerHTML = hours 
     document.querySelector('#dateData-minutes').innerHTML = minutes 
     document.querySelector('#dateData-seconds').innerHTML = seconds 
-    setTimeout( countdown, 1000); //sets the function to rerun every second
+    
+    //set the function to rerun every second
+    setTimeout( countdown, 1000); 
 }
-
-
-// window.onload = function countdown(){
-//     const currentDate = new Date();
-//     // const hours = d.getHours();
-//     // const minutes = d.getMinutes();
-//     // const totalMinutes = (60*hours) + minutes;
-//     // const minutesLeftinDay = 1440 - totalMinutes;
-//     // const currentTime = d.getTime();
-//     // // plan: get number of minutes so far in day and subtract them from 1440, the total amount of daily minutes
-    
-//     // //  then get 
-//     // let futureDate = new Date();
-//     // futureDate.setDate(futureDate.getDate()+5);
-//     // let futureDateinMinutes = futureDate.getTime(); 
-
-//     // const year = d.getFullYear();
-//     // const today = d.getDay();
-//     // countdownTargetDay = today + 4;
-//     // countdownTarget = new Date()
-//     // //get the total minutes that have passed so far in the day
-    
-//     // const time = d.getTime();
-    
-    
-//     // futureDateDay = futureDate.getDate()
-//     // console.log('future date '+ futureDateDay)
-//     const currentTime = currentDate.getTime();
-//     let futureDate = new Date();
-//     futureDate.setDate(futureDate.getDate()+5);
-//     let futureDateinMinutes = futureDate.getTime(); 
-
-
-//     // const futureDateinMinutes = futureDate.getMinutes()
-//     // console.log('year: '+year, 'today'+today)
-//     // console.log('hours: '+hours+'total minutes: '+totalMinutes);
-//     document.querySelector('#dateData').innerHTML = currentDate
-//     setTimeout( countdown, 1000); //sets the function to rerun every second
-// }
