@@ -55,25 +55,53 @@ header {
   width: 92%;
   margin: auto;
 }
+@media all and (min-width: 768px) {
+  header {
+    max-width: 900px;
+  }
+}
 header #h1-container {
   width: 73%;
   border-bottom: 2px solid #005282;
   margin: auto;
+}
+@media all and (min-width: 768px) {
+  header #h1-container {
+    border-bottom: 4px solid #005282;
+    width: 94%;
+  }
 }
 header #h1-container h1 {
   font-size: 1.3rem;
   line-height: 1.8rem;
   padding: 40px 0;
 }
+@media all and (min-width: 768px) {
+  header #h1-container h1 {
+    padding: 20px 0;
+    max-width: 400px;
+    margin: auto;
+  }
+}
 header #header-quote {
   margin-top: 40px;
   line-height: 1.2;
+}
+@media all and (min-width: 768px) {
+  header #header-quote {
+    margin-top: 20px;
+  }
 }
 header #header-quote p {
   font-size: 28px;
   font-family: arial, sans-serif;
   margin-bottom: 1rem;
   font-weight: bold;
+}
+@media all and (min-width: 768px) {
+  header #header-quote p {
+    font-size: 29px;
+  }
 }
 header #header-quote p .light-blue {
   color: #005282;
@@ -116,7 +144,7 @@ form button {
 
 .submit-response {
   font-size: 25px;
-  padding: 24px 0 36px 0;
+  padding: 7px 0 36px 0;
   display: none;
 }
 
@@ -140,18 +168,24 @@ form button {
 }
 #main #dates #date-timer {
   background-color: #71a1be;
-  padding: 40px 40px;
+  padding: 16px 40px 40px 40px;
+}
+#main #dates #date-timer h2 {
+  font-size: 25px;
+  color: #fff;
 }
 #main #dates #date-timer p:first-child {
-  font-size: 25px;
+  font-size: 49px;
 }
 #main #dates #date-timer p {
   color: #fff;
 }
 #main #dates #date-timer #dateData {
   display: flex;
-  justify-content: space-around;
-  margin-top: 48px;
+  justify-content: space-between;
+  padding-top: 36px;
+  width: 90%;
+  margin: auto;
 }
 #main #dates #date-timer #dateData .col p:first-child {
   margin-bottom: 2px;
@@ -169,18 +203,19 @@ form button {
     margin-top: 2rem;
     font-size: 25px;
   }
-  #main #dates #date-static #date-static-time {
-    margin-top: 1rem;
-  }
   #main #dates #date-timer {
     width: 80%;
     margin-left: 1rem;
-    padding: 40px 40px;
+    padding: 40px 40px 40px 40px;
+  }
+  #main #dates #date-timer p:first-child {
+    font-size: 65px;
   }
   #main #dates #date-timer #dateData {
-    margin-top: 68px;
-    justify-content: space-evenly;
-    width: 100%;
+    padding-top: 77px;
+    justify-content: space-between;
+    width: 82%;
+    margin: auto;
   }
 }
 #main #james-content #james-portrait {
@@ -194,12 +229,12 @@ form button {
 }
 #main #james-content #james-portrait #james-portrait-presented {
   font-style: italic;
-  margin-top: 2rem;
+  margin-top: 19px;
   color: #fff;
 }
 #main #james-content #james-portrait #james-portrait-name {
-  font-size: 25px;
-  margin-top: 40px;
+  font-size: 31px;
+  margin-top: 30px;
   color: #fff;
 }
 #main #checkboxes {
@@ -254,9 +289,25 @@ footer #warning {
   font-size: 1.2rem;
   font-family: arial, sans-serif;
   font-weight: bold;
+  position: relative;
+}
+@media all and (min-width: 768px) {
+  footer #warning {
+    padding: 30px 0;
+  }
 }
 footer #warning img {
   display: none;
+}
+@media all and (min-width: 840px) {
+  footer #warning img {
+    display: block;
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    top: 25%;
+    left: 7%;
+  }
 }
 footer #claim-spot {
   padding: 46px 1rem 46px 1rem;

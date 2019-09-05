@@ -53,29 +53,45 @@ body{
         margin: auto;
     }
 }
-
 header{
     width:92%;
     margin: auto;
-    
+    @media all and (min-width: 768px) { 
+        max-width: 900px;
+    }
     #h1-container{
         width:73%;
         border-bottom: 2px solid $medium-blue;
         margin: auto;
+        @media all and (min-width: 768px) { 
+            border-bottom: 4px solid $medium-blue;
+            width: 94%;
+        }
         h1{
             font-size: 1.3rem;
             line-height: 1.8rem;
             padding:40px 0;
+            @media all and (min-width: 768px) { 
+                padding:20px 0;
+                max-width: 400px;
+                margin:auto;
+            }
         }
     }
     #header-quote {
         margin-top: 40px;
         line-height: 1.2;
+        @media all and (min-width: 768px) { 
+            margin-top: 20px;
+        }
         p{
             font-size: 28px;
             font-family:arial, sans-serif;  
             margin-bottom: 1rem;
             font-weight: bold;
+            @media all and (min-width: 768px) { 
+                font-size: 29px;
+            }
             .light-blue{
                 color:$medium-blue;
             }
@@ -115,7 +131,7 @@ form{
 }
 .submit-response{
     font-size: $font-larger;
-    padding: 24px 0 36px 0;
+    padding: 7px 0 36px 0;
     display: none;
 }
 #main{
@@ -140,18 +156,23 @@ form{
         }
         #date-timer{
             background-color: $light-blue;
-            padding: 40px 40px;
-            
-            p:first-child{
+            padding: 16px 40px 40px 40px;
+            h2{
                 font-size: $font-larger;
+                color:$white;
+            }
+            p:first-child{
+                font-size: 49px;
             }
             p{
                 color:$white;
             }
             #dateData{
                 display: flex;
-                justify-content: space-around;
-                margin-top: 48px;
+                justify-content: space-between;
+                padding-top: 36px;
+                width: 90%;
+                margin: auto;
                 .col{
                     p:first-child{
                         margin-bottom:2px;
@@ -172,21 +193,21 @@ form{
                     margin-top: 2rem;
                     font-size: $font-larger;
                 }
-                #date-static-time{
-                    margin-top: 1rem;
-                }
             }
             #date-timer{
                 width: 80%;
                 margin-left: $col-margin;
-                padding: 40px 40px;
-                
-                
-                #dateData{
-                    margin-top: 68px;
-                    justify-content: space-evenly;
-                    width: 100%;
+                padding: 40px 40px 40px 40px;
+                p:first-child{
+                    font-size: 65px;
                 }
+                #dateData{
+                    padding-top: 77px;
+                    justify-content: space-between;
+                    width: 82%;
+                    margin: auto;
+                }
+                
             }
         }
     }
@@ -195,19 +216,18 @@ form{
             padding: 4rem 2rem;
             margin: auto;
             background-color: $dark-blue;
-            
             img{
                 width: 100%;
                 height: 100%;
             }
             #james-portrait-presented{
                 font-style: italic;
-                margin-top:2rem;
+                margin-top:19px;
                 color: $white;
             }
             #james-portrait-name{
-                font-size: $font-larger;
-                margin-top:40px;
+                font-size: 31px;
+                margin-top:30px;
                 color: $white;
             }
         }
@@ -266,8 +286,20 @@ footer{
         font-size: 1.2rem;
         font-family: arial, sans-serif;
         font-weight: bold;
+        position: relative;
+        @media all and (min-width: 768px) { 
+            padding: 30px 0;
+        }
         img{
             display:none;
+            @media all and (min-width: 840px) { 
+                display: block;
+                height: 44px;
+                width:44px;
+                position: absolute;
+                top:25%;
+                left:7%;
+            }
         }
     }
     #claim-spot{
