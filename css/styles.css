@@ -106,6 +106,12 @@ form button {
   }
 }
 
+.submit-response {
+  font-size: 25px;
+  padding: 24px 0 36px 0;
+  display: none;
+}
+
 #main #dates #date-static {
   padding: 3rem 2rem;
   background-color: #71a1be;
@@ -200,6 +206,11 @@ form button {
   display: flex;
   min-height: 133px;
 }
+#main #checkboxes .checkboxes-row img {
+  height: 66px;
+  width: 70px;
+  flex-shrink: 0;
+}
 #main #checkboxes .checkboxes-row p {
   margin: 1em 0 0 1rem;
   text-align: left;
@@ -259,4 +270,4 @@ footer #arrow-container #downward-arrow {
   margin: auto;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=styles.css.map */
