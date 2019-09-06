@@ -154,7 +154,7 @@ form button {
 }
 
 #main #dates #date-static {
-  padding: 3rem 2rem;
+  padding: 48px 32px;
   background-color: #71a1be;
 }
 #main #dates #date-static img {
@@ -249,7 +249,7 @@ form button {
 }
 #main #checkboxes #checkboxes-header {
   font-weight: bold;
-  padding: 3rem 0 2rem 0;
+  padding: 48px 0 32px 0;
 }
 #main #checkboxes .checkboxes-row {
   display: flex;
@@ -292,6 +292,10 @@ form button {
     padding: 0 32px;
     width: 50%;
   }
+  #main #checkboxes #checkboxes-header {
+    font-weight: bold;
+    padding: 52px 0 32px 0;
+  }
 }
 
 footer #warning {
@@ -333,7 +337,7 @@ footer #warning img {
   }
 }
 footer #claim-spot {
-  padding: 46px 1rem 46px 1rem;
+  padding: 46px 16px 46px 16px;
   background-color: #05263a;
   color: #fff;
   font-size: 1.2rem;
