@@ -95,7 +95,7 @@ header #header-quote {
 header #header-quote p {
   font-size: 28px;
   font-family: arial, sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   font-weight: bold;
 }
 @media all and (min-width: 768px) {
@@ -108,7 +108,7 @@ header #header-quote p .light-blue {
 }
 
 form {
-  width: fit-content;
+  width: auto;
   margin: 0 auto 10px auto;
 }
 form input, form label {
@@ -118,14 +118,14 @@ form button {
   background-color: #005282;
   border: 1px solid #05263a;
   border-radius: 12px;
-  height: 5rem;
+  height: 80px;
   width: 88%;
   font-family: arial, sans-serif;
   color: #fff;
   font-size: 17px;
   font-weight: bold;
   padding: 0 3em 0 3em;
-  margin: 24px 0 24px 0;
+  margin: 24px 0;
   cursor: pointer;
 }
 @media all and (min-width: 768px) {
@@ -140,19 +140,19 @@ form button {
 
 #footer-form {
   margin-top: 8px;
-  padding-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .submit-response {
   font-size: 25px;
-  padding-top: 7px;
+  padding: 7px 0 0 0;
   display: none;
-  
 }
-.submit-response#submit-response-header {
-  padding-bottom: 36px;
-  
+
+#submit-response-header {
+  margin-bottom: 30px;
 }
+
 #main #dates #date-static {
   padding: 3rem 2rem;
   background-color: #71a1be;
@@ -165,11 +165,11 @@ form button {
   color: #fff;
 }
 #main #dates #date-static #date-static-day {
-  margin-top: 2rem;
+  margin-top: 32px;
   font-size: 25px;
 }
 #main #dates #date-static #date-static-time {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 #main #dates #date-timer {
   background-color: #71a1be;
@@ -206,7 +206,7 @@ form button {
     padding: 40px 32px 60px 32px;
   }
   #main #dates #date-static #date-static-day {
-    margin-top: 2rem;
+    margin-top: 32px;
     font-size: 25px;
   }
   #main #dates #date-timer {
@@ -225,7 +225,7 @@ form button {
   }
 }
 #main #james-content #james-portrait {
-  padding: 4rem 2rem;
+  padding: 64px 32px;
   margin: auto;
   background-color: #05263a;
 }
@@ -244,7 +244,7 @@ form button {
   color: #fff;
 }
 #main #checkboxes {
-  padding: 0 1rem 0 1rem;
+  padding: 0 16px;
   background-color: #ebebeb;
 }
 #main #checkboxes #checkboxes-header {
@@ -261,7 +261,7 @@ form button {
   flex-shrink: 0;
 }
 #main #checkboxes .checkboxes-row p {
-  margin: 1em 0 0 1rem;
+  margin: 16px 0 0 16px;
   text-align: left;
   line-height: 1.4;
 }
@@ -272,7 +272,7 @@ form button {
   }
   #main #james-content #james-portrait {
     height: auto;
-    padding: 4rem 1rem;
+    padding: 64px 16px;
     margin: 0;
     background-color: #05263a;
     width: 50%;
@@ -281,14 +281,21 @@ form button {
     width: auto;
     height: auto;
   }
+}
+@media all and (min-width: 768px) and (min-width: 768px) and (max-width: 806px) {
+  #main #james-content #james-portrait img {
+    width: 99%;
+  }
+}
+@media all and (min-width: 768px) {
   #main #checkboxes {
-    padding: 0 2rem 0 2rem;
+    padding: 0 32px;
     width: 50%;
   }
 }
 
 footer #warning {
-  padding: 36px 1rem 36px 1rem;
+  padding: 36px 16px 36px 16px;
   line-height: 1.4;
   background-color: #f58c99;
   color: #fff;
@@ -305,14 +312,24 @@ footer #warning {
 footer #warning img {
   display: none;
 }
-@media all and (min-width: 840px) {
+@media all and (min-width: 851px) {
   footer #warning img {
     display: block;
     height: 44px;
     width: 44px;
     position: absolute;
     top: 25%;
+    left: 3%;
+  }
+}
+@media all and (min-width: 916px) {
+  footer #warning img {
     left: 7%;
+  }
+}
+@media all and (min-width: 1036px) {
+  footer #warning img {
+    left: 9%;
   }
 }
 footer #claim-spot {

@@ -24,7 +24,7 @@ window.onload = function countdown(){
     
     //concatenate zero to front of single digit seconds to help keep spacing consistent
     if(seconds < 10){
-            seconds = "0"+seconds;
+        seconds = "0"+seconds;
     }
 
     //output the data into their respective containers.
